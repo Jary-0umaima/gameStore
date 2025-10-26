@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:game_store/pages/home/widgets/header.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,8 +32,13 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Container()
-            
+            Column(
+              children: [
+                const HeaderSection(),
+                //const SearchSection(),
+                //CategorySection(),
+              ],
+            )
           ],
         ),
       ),
